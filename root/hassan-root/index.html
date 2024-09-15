@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomeAwayU</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="logo">HomeAwayU</div>
+            <div>
+                <ul class="navbar-links">
+                    <li><a href="./about.html">Services</a></li>
+                    <li><a href="./authors.html">Authors</a></li>
+                    <li><a href="./roommate-finder.html">Roommates</a></li>
+                    <li>
+                        <div class="btn-container">
+                            <div id="display-when-logged-out">
+                                <button id="signup" class="btn btn-color-1">Sign Up</button>
+                                <button id="login" class="btn btn-color-2">Log In</button>
+                            </div>
+                            <div id="display-when-logged-in" style="display:none;">
+                                <button id="account" class="btn btn-color-1">Account</button>
+                                <button id="logout" class="btn btn-color-2">Logout</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!--<nav id="hamburger-nav">
+            <div class="logo">Hassan Khan</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>-->
+        <div id="bannerimage"></div>
+        <!--<section>
+            <div class="experience-details-container">
+                <input type="text" id="city-input" placeholder="City, State" autocomplete="off">
+            </div>
+        </section>-->
+
+        <div class="details-container color-container" style="margin:2rem;">
+            <img src="./house-icon.png" alt="location icon" class="icon map-icon">
+            <input id="input-box" type="text" placeholder="Search Housing" autocomplete="off">
+            <img src="./map-pin.png" alt="location icon" class="icon map-icon">
+            <input id="input-box" type="text" placeholder="City, State" autocomplete="off">
+            <button id="signup" class="btn btn-color-3">Search</button>
+        </div>
+        
+        <!--<script src="./node_modules/@propelauth/javascript"></script>-->
+        <script src="script.js" type="module"></script>
+        
+        
+    </body>
+</html>

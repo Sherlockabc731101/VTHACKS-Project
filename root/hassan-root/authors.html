@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomeAwayU - Authors</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="logo" onclick="switchPage('index.html')">HomeAwayU</div>
+            <div>
+                <ul class="navbar-links">
+                    <li><a href="./about.html">Services</a></li>
+                    <li><a href="./authors.html">Authors</a></li>
+                    <li>
+                        <div class="btn-container">
+                            <div id="display-when-logged-out">
+                                <button id="signup" class="btn btn-color-1">Sign Up</button>
+                                <button id="login" class="btn btn-color-2">Log In</button>
+                            </div>
+                            <div id="display-when-logged-in" style="display:none;">
+                                <button id="account" class="btn btn-color-1">Account</button>
+                                <button id="logout" class="btn btn-color-2">Logout</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="authorbanner"></div>
+        <section>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./hassan-photo.png" alt="Hassan Khan" class="project-img">
+                        </div>
+                        <h2 class = "author-heading project-title">Hassan Khan</h2>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./about-pic.png" alt="Sayvion Mayfield" class="project-img">
+                        </div>
+                        <h2 class = "author-heading project-title">Sayvion Mayfield</h2>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./about-pic.png" alt="Hassan Khan" class="project-img">
+                        </div>
+                        <h2 class = "author-heading project-title">Christopher O'Keeffe</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
