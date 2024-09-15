@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HomeAwayU</title>
+        <!-- <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico"> -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Chris Okeeffe, Hassan Khan, Sayvion Mayfield">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="indexStyle.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="logo"><a href="./index.html">HomeAwayU</a></div>
+            <div>
+                <ul class="navbar-links">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./experience.html">Calendar</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./contact.html">Home Assistant IoT</a></li><!-- LOOK HERE RIGHT NOW FOR HACKATHON -->
+                    <li>
+                        <div class="btn-container">
+                            <button class="btn btn-color-1"
+                            onclick="window.open('./register.html')">Sign Up</button>
+                            <button class="btn btn-color-2"
+                            onclick="window.open('./login.html')">Log In</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="bannerimage"></div>
+        <div>
+        </div>
+        <div id="contactInfoAndForm">
+            <div id="devNames">
+                <h2>Developers</h2>
+                <address><pre>Chris Okeeffe    Hassan Khan    Sayvion Mayfield</pre></address>
+            </div>
+            <div id="hiddenContactInfo">
+                <p>Contacts:</p>
+                <pre>chrisd.okeeffe@gmail.com    hkhan128@terpmail.umd.edu    smmayfield3@outlook.com</pre>
+            </div>
+            <button id="contactButton" type="button" onclick="contactInfoFunc()">Contact The Developers</button><br>
+            <form id="contactForm" onsubmit="submitForm(event)" autocomplete="on">
+                <label class="formLabels" for="fullName">Full Name (optional)</label><br>
+                <input type="text" id="fullName" name="fullName" value="Your name" class="userInputBoxs"><br>
+                <label class="formLabels" for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="Your email address" class="userInputBoxs"><br>
+                <label class="formLabels" for="company">Company (optional)</label><br>
+                <input type="text" id="company" name="company" value="Company Name" class="userInputBoxs"><br>
+                <label class="formLabels" for="message">Leave us a message</label><br>
+                <input type="text" id="message" name="message" value="Write your message here..." class="userInputBoxFinal"><br><br><br>
+                <input type="submit" value="Submit" class="submitButton">
+            </form>
+        </div>
+        <button onclick="window.print()">Print this page</button>
+        <script src="indexScript.js"></script>
+    </body>
+
+</html>
